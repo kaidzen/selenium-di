@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+
+<suite name="Chrome browser suite">
+    <test name="Page title test">
+        <parameter name="browser" value="CHROME"/>
+        <classes>
+            <class name="FactoryPatternTest"/>
+        </classes>
+    </test>
+</suite>
+
