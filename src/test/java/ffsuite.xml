@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+
+<suite name="Firefox browser suite">
+    <test name="Page title test">
+        <parameter name="browser" value="FIREFOX"/>
+        <classes>
+            <class name="FactoryPatternTest"/>
+        </classes>
+    </test>
+</suite>
