@@ -1,19 +1,13 @@
 package DriverManager;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.lang.reflect.InvocationTargetException;
 
 public class DriverManagerFactory {
 
-    public static DriverManager getManager(DriverType type) {
 
-        Map<DriverType, DriverManager> driverManager = new HashMap<>();
-        driverManager.put(DriverType.CHROME, new ChromeDriverManager());
-        driverManager.put(DriverType.FIREFOX, new FirefoxDriverManager());
-        driverManager.put(DriverType.SAFARI, new SafariDriverManager());
-
-        return driverManager.get(type);
-
+    public static <T extends DriverManager> T getManager(final Class<T> type) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
+        return type.getConstructor().newInstance();
     }
+
 
 }
