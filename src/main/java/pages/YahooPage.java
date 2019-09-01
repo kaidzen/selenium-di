@@ -1,7 +1,7 @@
-package Pages;
+package pages;
 
 public class YahooPage extends BasePage<YahooPage>{
-    private final String PAGE_URL = "https://www.yahoo.com";
+    private static final String PAGE_URL = "https://www.yahoo.com";
 
     @Override
     protected String getPageURL() {
@@ -9,7 +9,7 @@ public class YahooPage extends BasePage<YahooPage>{
     }
 
     @Override
-    protected YahooPage getPage() {
+    protected YahooPage getThis() {
         return this;
     }
 }

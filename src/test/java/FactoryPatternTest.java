@@ -1,9 +1,9 @@
-import Pages.GooglePage;
-import Pages.YahooPage;
+import pages.GooglePage;
+import pages.YahooPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class FactoryPatternTest extends BaseTest {
+public class FactoryPatternTest extends TestBase {
 
 
     @Test

@@ -1,4 +1,4 @@
-package DriverManager;
+package manager;
 
 public class SafariDriverManager extends DriverManager {
     @Override

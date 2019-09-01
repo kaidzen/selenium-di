@@ -1,14 +1,14 @@
-import DriverManager.ChromeDriverManager;
-import DriverManager.DriverManager;
-import DriverManager.DriverManagerFactory;
+import manager.ChromeDriverManager;
+import manager.DriverManager;
+import manager.DriverManagerFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 
 import java.lang.reflect.InvocationTargetException;
 
-public class BaseTest {
-    String browser;
-    DriverManager driverManager;
+public class TestBase {
+    private String browser;
+    private DriverManager driverManager;
     WebDriver driver;
 
     @BeforeTest

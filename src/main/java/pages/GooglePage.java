@@ -1,8 +1,8 @@
-package Pages;
+package pages;
 
 
 public class GooglePage extends BasePage<GooglePage>{
-    private final String PAGE_URL = "https://www.google.com";
+    private static final String PAGE_URL = "https://www.google.com";
 
     @Override
     protected String getPageURL() {
@@ -10,7 +10,7 @@ public class GooglePage extends BasePage<GooglePage>{
     }
 
     @Override
-    protected GooglePage getPage() {
+    protected GooglePage getThis() {
         return this;
     }
 
