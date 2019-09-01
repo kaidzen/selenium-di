@@ -9,4 +9,14 @@ public class GooglePage extends BasePage<GooglePage>{
         return PAGE_URL;
     }
 
+    @Override
+    protected GooglePage getPage() {
+        return this;
+    }
+
+    public GooglePage printMessage(){
+        System.out.println("Message from Google Page");
+        return this;
+    }
+
 }

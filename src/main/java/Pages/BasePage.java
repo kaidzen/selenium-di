@@ -7,15 +7,16 @@ abstract class BasePage<T extends BasePage> {
     private WebDriver webDriver;
 
     protected abstract String getPageURL();
+    protected abstract T getPage();
 
     public T setWebDriver(WebDriver webDriver) {
         this.webDriver = webDriver;
-        return (T) this;
+        return getPage();
     }
 
     public T openPage() {
         webDriver.get(getPageURL());
-        return (T) this;
+        return getPage();
     }
 
     public final String getPageTitle() {

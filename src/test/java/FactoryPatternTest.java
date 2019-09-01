@@ -37,6 +37,7 @@ public class FactoryPatternTest extends BaseTest {
         Assert.assertEquals(
                 page.setWebDriver(driver)
                         .openPage()
+                        .printMessage()
                         .getPageTitle(), "Google");
     }
 

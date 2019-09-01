@@ -7,4 +7,9 @@ public class YahooPage extends BasePage<YahooPage>{
     protected String getPageURL() {
         return PAGE_URL;
     }
+
+    @Override
+    protected YahooPage getPage() {
+        return this;
+    }
 }
